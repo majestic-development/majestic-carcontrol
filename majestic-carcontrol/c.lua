@@ -161,6 +161,6 @@ RegisterNUICallback('callback', function(data)
     end
 end)
 
-RegisterNetEvent('ac-carcontrol:openMenu', function()
+RegisterNetEvent('majestic-carcontrol:openMenu', function()
     ExecuteCommand(Config.Menu.Command)
 end)
