@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+	width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: transparent;
+    border-radius: 1px;
+}
+
+#mainDiv {
+    display: block;
+    width: 40%;
+    height: fit-content;
+    position: absolute;
+    /* left: 0;
+    right: 0;
+    bottom: 3%; */
+    margin: auto;
+    display: none;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* background-color: red; */
+}
+
+#MDDiv {
+    width: 17%;
+    height: fit-content;
+    position: relative;
+    background: #1d1d25d5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+#MDDTopDiv {
+    width: 90%;
+    height: 18%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.04) 0.24%, rgba(255, 255, 255, 0.17) 50.05%, rgba(255, 255, 255, 0.04) 99.82%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 9px;
+    text-shadow: 0px 0px 20px #00df8aab;
+    color: #00df8a;
+}
+
+.MDDBottomDiv {
+    width: 100%;
+    height: fit-content;
+    padding: 15px 15px 0px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 15px 20px;
+    /* background-color: blue; */
+}
+
+.MDDBDDiv {
+    width: 25.5%;
+    height: 15%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 2px;
+}
+
+.MDDBDDiv:hover {
+    border: 1px solid #009F63;
+    background: linear-gradient(90deg, rgba(0, 223, 138, 0.61) 0%, rgba(0, 223, 138, 0.16) 125.86%);
+}
+
+.MDDBDDivDefault {
+    border: 1px solid #8B8B8B;
+    background: linear-gradient(90deg, rgba(201, 197, 198, 0.21) 0%, rgba(255, 255, 255, 0.05) 125.86%);
+}
+
+.MDDBDDivActive {
+    border: 1px solid #009F63;
+    background: linear-gradient(90deg, rgba(0, 223, 138, 0.61) 0%, rgba(0, 223, 138, 0.16) 125.86%);
+}
+
+.MDDBDDivDeactive {
+    border: 1px solid #5A2232;
+    /* background: #47242E; */
+    background: linear-gradient(90deg, rgba(71, 36, 46, 0.71) 0%, rgba(71, 36, 46, 0.26) 125.86%);
+}
+
+.MDDBDDivAlarm {
+    /* border: 1px solid rgba(155, 113, 75, 0.59);
+    background: linear-gradient(90deg, rgba(211, 101, 0, 0.61) 0%, rgba(211, 101, 0, 0.16) 125.86%); */
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        border: 1px solid rgba(155, 113, 75, 0.59);
+        background: linear-gradient(90deg, rgba(211, 101, 0, 0.61) 0%, rgba(211, 101, 0, 0.16) 125.86%);
+    }
+    50% {
+        border: 1px solid #8B8B8B;
+        background: linear-gradient(90deg, rgba(201, 197, 198, 0.21) 0%, rgba(255, 255, 255, 0.05) 125.86%);
+    }
+    100% {
+        border: 1px solid #8B8B8B;
+        background: linear-gradient(90deg, rgba(201, 197, 198, 0.21) 0%, rgba(255, 255, 255, 0.05) 125.86%);
+    }
+}
+
+.MDDBDDTopLeftDiv {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    top: 12%;
+    left: 12%;
+    z-index: 22;
+    border-radius: 2px;
+}
+
+.MDDBDDTopLeftDivRed {
+    background: linear-gradient(90deg, rgba(255, 0, 31, 1) 0%, rgba(243, 76, 96, 1) 125.86%);
+    box-shadow: 0px 0px 10px 4px rgba(255, 0, 31, 0.35);
+}
+
+.MDDBDDTopLeftDivGreen {
+    background: linear-gradient(90deg, rgba(0, 255, 26, 0.81) 0%, rgba(71, 232, 88, 0.66) 125.86%);
+    box-shadow: 0px 0px 10px 5px rgba(0, 255, 26, 0.35);
+}
+
+#MDDBDDEngineOff {
+    display: none;
+}
+
+#MDDBDDEngineOn {
+    display: none;
+}
